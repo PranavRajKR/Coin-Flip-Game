@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coin Flip Game</title>
+
+        <script src="scripts/coinflip.js"></script>
+
+        <link rel="stylesheet" href="styles/coinflip.css">
+    </head>
+
+    <body>
+        <button class="move-button" onclick="playGame('heads');">
+            <img class="image-icon" src="images/heads.png">
+        </button>
+        
+        <button class="move-button" onclick="playGame('tails');">
+            <img  class="image-icon" src="images/tails.png">
+        </button>
+
+        <p class="js-result text-result"></p>
+
+        <p class="js-moves text-moves"></p>
+
+        <p class="js-score text-score"></p>    
+
+        <button class="reset-button" onclick="   
+            resetScore();
+            updateScoreElements();
+            ">Reset Score
+        </button>
+    </body>
+</html>
